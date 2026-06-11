@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class prime {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a min number");
+        int n = sc.nextInt();
+        System.out.println("Enter a max number");
+        int m = sc.nextInt();
+        int c;
+        int i,j;
+        for(i=n;i<=m;i++)
+        {
+            c=0;
+            for(j=1;j<=i;j++)
+            {
+                if(i%j==0)
+                    c++;
+            }
+            if(c==2)
+            {
+                System.out.println("Number is prime ="+i);
+            }
+            
+        }
+        sc.close();
+        
+    }
+}
