@@ -7,8 +7,8 @@ public class pwer {
         System.out.println("Enter power");
         int n=sc.nextInt();
         int u=1;
-        for(int i=1;i<=x;i++)
-            u=x*x;
+        for(int i=1;i<=n;i++)
+            u=u*x;
         System.out.println(u);
         sc.close();
     }
